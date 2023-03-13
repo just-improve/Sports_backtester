@@ -1,7 +1,6 @@
 import pandas as pd
 
 def create_category_round(list_obj, modelSeason):
-    '''chyba lepiej na dicta zamienić będzie łatwiej'''
     columns_round = []
     df_categories_by_round_outer = pd.DataFrame()
     for x in range(modelSeason.round_count):
@@ -18,4 +17,3 @@ def create_category_round(list_obj, modelSeason):
 
     df_categories_by_round_outer.columns = columns_round
     modelSeason.categories_by_round_all_season_dict = df_categories_by_round_outer.to_dict(orient='dict')
-    '''tu trzeba dodać teraz tą df do wiersza pierwszegu drugiego itp a najlepiej to jeszcze zsumować'''

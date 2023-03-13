@@ -17,3 +17,4 @@ class ModelSettings:
         self.stake_per_team = None
         self.avarage_odd = None
         self.category_progression_dict = {}
+        self.calc_stake_for_next_round = 1.1

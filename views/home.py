@@ -28,7 +28,7 @@ class HomeView(Frame):
 
         self.e_avarage_odd_per_match = Entry(self)
         self.e_avarage_odd_per_match.grid(row=2, column=1, padx=px, pady=py)
-        self.e_avarage_odd_per_match.insert(0, 1.9)
+        self.e_avarage_odd_per_match.insert(0, 0.9)
 
         self.category_settings_lab = Label(self, text="Kategorie procenty")
         self.category_settings_lab.grid(row=3, column=0, padx=px, pady=py)  # sticky="ew"
@@ -45,24 +45,26 @@ class HomeView(Frame):
 
         self.e_cat_2 = Entry(self)
         self.e_cat_2.grid(row=5, column=1, padx=px, pady=py)
-        self.e_cat_2.insert(0, 1.1)
+        self.e_cat_2.insert(0, 1.05)
 
         self.cat_3_lab = Label(self, text="Kategoria 3")
         self.cat_3_lab.grid(row=6, column=0, padx=px, pady=py)  # sticky="ew"
 
         self.e_cat_3 = Entry(self)
         self.e_cat_3.grid(row=6, column=1, padx=px, pady=py)
-        self.e_cat_3.insert(0, 1.2)
+        self.e_cat_3.insert(0, 1.1)
 
         self.cat_4_lab = Label(self, text="Kategoria 4")
         self.cat_4_lab.grid(row=7, column=0, padx=px, pady=py)  # sticky="ew"
 
         self.e_cat_4 = Entry(self)
         self.e_cat_4.grid(row=7, column=1, padx=px, pady=py)
-        self.e_cat_4.insert(0, 1.3)
-
+        self.e_cat_4.insert(0, 1.15)
 
         self.make_backtest_btn = Button(self, text="Make backtest")
-        self.make_backtest_btn.grid(row=20, column=0, padx=px, pady=py)
+        self.make_backtest_btn.grid(row=8, column=0, padx=px, pady=py)
+
+        self.plot_result_btn = Button(self, text="Plot Result")
+        self.plot_result_btn.grid(row=9, column=0, padx=px, pady=py)
 
 
