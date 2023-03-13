@@ -13,7 +13,7 @@ class HomeView(Frame):
 
         self.e_csv_file = Entry(self)
         self.e_csv_file.grid(row=0, column=1, padx=px, pady=py)
-        self.e_csv_file.insert(0, 'premier.csv')
+        self.e_csv_file.insert(0, 'premier21.csv')
 
         self.stake_per_team_lab = Label(self, text="Stawka na drużyne")
         self.stake_per_team_lab.grid(row=1, column=0, padx=px, pady=py)   #sticky="ew"
@@ -65,6 +65,4 @@ class HomeView(Frame):
         self.make_backtest_btn = Button(self, text="Make backtest")
         self.make_backtest_btn.grid(row=20, column=0, padx=px, pady=py)
 
-        self.test_btn = Button(self, text="test_btn")
-        self.test_btn.grid(row=30, column=0, padx=px, pady=py)
 
