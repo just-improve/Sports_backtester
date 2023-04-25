@@ -45,6 +45,8 @@ def calculate_all_season_results(list_of_obj, modelSeason, modelSettings):
 
 
 
+'''jak jest obliczana stawka na kolejkę'''
+'''w zależności od sekwencji znając stawkę na kolejkę obliczamy ile postawić na każdą drużynę'''
 
 def calculate_stake_for_team_based_on_category(modelSeason, model_settings, round):
     kategoria_rundy = modelSeason.categories_by_round_all_season_dict[str(round)]

@@ -42,6 +42,7 @@ def create_list_obj_teams(list_of_teams, df):
 
     return list_of_obj_teams
 
+#wiaderny
 def create_new_col_based_on_value(df):
     count = 0
     for i in range(0, len(df)):

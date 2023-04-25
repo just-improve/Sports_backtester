@@ -11,6 +11,7 @@ def create_category_round(list_obj, modelSeason):
         for team in list_obj:
             '''tutaj pokazuje aktualną kategorię danej drużyny i iteruje po każdej drużynie więc mamy całą kolejkę i trzeba teraz zapisać to do df i później zgrupować żeby było widać count'''
             df_round_category = pd.concat([df_round_category, pd.Series([team.df['sekw'][y]])], axis=1)
+            # print('')
 
         counts = df_round_category.iloc[0].value_counts()
         df_categories_by_round_outer = pd.concat([df_categories_by_round_outer, counts], axis=1)
